@@ -1,0 +1,70 @@
+body{
+    margin:0%;
+    padding:0%;
+  
+  
+}
+
+
+.container{   float:left;
+    
+    font-family:Arial,Heletisa,sans-serlf;
+    color:black;
+    font-weight:bold;
+    position:absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:60px;
+
+
+    
+    
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translatex(-50%) translateY(-50%);
+    font-size: 50px;
+    font-family: sans-serif;
+    color:black;
+   
+
+
+}
+.aaa{  
+     top:20px;
+       
+}
+h1{   font-family: Algerian;
+       text-align: center;
+       font-size: 40px;
+       color:green;
+       }
+       img{ float:right;
+           height:200px;
+           width:200px;
+           padding-right:20%;
+           margin-top: 6%;
+       }
+       .babu{ text-indent: 40%;
+              font-weight: bolder;
+           font-size: 50px;
+
+           margin-top:20%;
+           margin-left:40%;
+          
+       }
+        button{
+            margin-left:45%;
+            font-size: 20px;
+            font-style: italic;
+        }
+        .ideal{
+            padding-left:68%;
+            font-weight: bold;
+      }
+    .pol a{
+        text-decoration: none;
+    }
+
+       

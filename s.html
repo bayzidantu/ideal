@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <style>
+        .antu{
+            margin-left:5%;
+            margin-top:10%;
+            
+
+        }
+        .bayzid{
+            font-size: 75px;
+            text-align: center;
+            color:green;
+            font-family:Algerian;
+            font-weight: bolder;
+        }
+        .benjir{
+            width:100px;
+            height:100px;
+            margin-bottom: 20%;
+            margin-left:4%;
+        }
+        .left{
+            margin-left:27%;
+
+        }
+        .right{
+            margin-left:5%;
+        }
+    </style>
+</head>
+<body>
+    <p class="bayzid">Student List<p>
+        
+        <div>
+            <button class="left" onclick="changeImage(-1)">Previous</button>
+            <img class="antu" src="antu.jpg" id="MyImg" width="300" height="400" alt="">
+            <button class="right" onclick="changeImage(1)">Next</button>
+        </div>
+  
+   <script>
+       var Image = ['antu.jpg','diba.jpg','riya.jpg','johirul.jpg','ratul.jpg','sadia.jpg','jone.jpg','rimon.jpg','sumi.jpg'];
+      
+       var my_img=document.getElementById("MyImg");
+       var count_Index =-1;
+       function MyImg_change(){
+           count_Index++;
+           if(count_Index >= Image.length){
+               count_Index = 0;
+               my_img.src = Image[count_Index];  
+               console.log(count_Index);
+           }
+           else{
+            my_img.src = Image[count_Index];  
+            console.log(count_Index);
+           }
+           setTimeout("MyImg_change()",4000);
+       }
+
+
+       Window.onload = MyImg_change();
+
+
+
+
+       
+      
+
+        
+   </script>
+</body>
+</html>
+
+
+
